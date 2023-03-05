@@ -9,12 +9,12 @@ A simple hello world application using express.js with typescript meant to serve
  * Typescript Configuration    
  * Running the application
 
- If your are [`cloning`]() this repo from github the only thing you need to do is run `npm install` to install the dependancies and make sure you have `ts-node-dev` installed globally and start the application.
+ If your are [`cloning`](https://github.com/crispycret/express-example) this repo from github the only thing you need to do is run `npm install` to install the dependancies and make sure you have `ts-node-dev` installed globally and start the application.
  
 #### Install dependancies
  ```
- git clone ...
- cd express_example
+ git clone https://github.com/crispycret/express-example.git
+ cd express-example
  npm install
  npm install -g ts-node-dev
  ```
@@ -29,15 +29,15 @@ A simple hello world application using express.js with typescript meant to serve
  `npm run dev` uses `ts-node-dev` and implements hot-reloading when detecting changes but has some limitations.
  `npm run start` classically compiles the typescript into javascript and runs the application and should be used if `npm run dev` is not working properly.
 
-## Project Structure
 
+## Project Structure
 
 The first thing we need to do is create the project stucture and initialize the project as a node application.
 
 ```
 myapp/
 ├── build/ (generated)
-│   └── app.js (generated)
+│   └── server.js (generated)
 ├── src/
 │   └──server.ts
 ├── package.json
